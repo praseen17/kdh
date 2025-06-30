@@ -1,0 +1,188 @@
+/* Contact Page Peak CSS */
+.kdh-contact-page {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #1E1E1E;
+  min-height: 100vh;
+  padding-bottom: 2.5rem;
+}
+.kdh-contact-hero {
+  position: relative;
+  background: linear-gradient(120deg, #59555517 50%, #e39684 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  text-align: center;
+  padding: 3.5rem 1rem 2.5rem 1rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 24px rgba(201,32,41,0.08);
+}
+.kdh-contact-hero h2 {
+  color: #0e0b0b;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.kdh-contact-hero p {
+  color: #0e0b0b;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.kdh-contact-main {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto 2.5rem auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+.kdh-contact-info-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(201,32,41,0.08);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  min-width: 320px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid #E7BBBB;
+  margin-bottom: 1.5rem;
+}
+.kdh-contact-info-card h3 {
+  color: #C92029;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.kdh-contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem 0;
+}
+.kdh-contact-info-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #1E1E1E;
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
+}
+.kdh-contact-info-list li .kdh-contact-icon {
+  width: 28px;
+  height: 28px;
+  background: #FABA3D;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C92029;
+  font-size: 1.2rem;
+  box-shadow: 0 1px 4px rgba(201,32,41,0.06);
+}
+.kdh-contact-form-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(201,32,41,0.08);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  min-width: 320px;
+  flex: 2;
+  border: 2px solid #E7BBBB;
+  margin-bottom: 1.5rem;
+}
+.kdh-contact-form-card h3 {
+  color: #C92029;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.kdh-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.kdh-contact-form input,
+.kdh-contact-form textarea {
+  padding: 0.9rem 1.2rem;
+  border-radius: 8px;
+  border: 1.5px solid #E7BBBB;
+  font-size: 1.08rem;
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #1E1E1E;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(201,32,41,0.04);
+}
+.kdh-contact-form input:focus,
+.kdh-contact-form textarea:focus {
+  border: 1.5px solid #C92029;
+  outline: none;
+  box-shadow: 0 2px 8px #FABA3D44;
+}
+.kdh-contact-form button {
+  background: #C92029;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 1rem 2.5rem;
+  border: none;
+  box-shadow: 0 2px 8px rgba(201,32,41,0.10);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.kdh-contact-form button:hover {
+  background: #FABA3D;
+  color: #C92029;
+  transform: scale(1.04);
+}
+.kdh-contact-map-wrapper {
+  width: 100%;
+  margin-top: 1.2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(201,32,41,0.10);
+}
+.kdh-contact-map-wrapper iframe {
+  width: 100%;
+  min-height: 180px;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+}
+@media (max-width: 900px) {
+  .kdh-contact-main {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .kdh-contact-info-card, .kdh-contact-form-card {
+    min-width: unset;
+    width: 100%;
+  }
+  .kdh-contact-map-wrapper iframe {
+    min-height: 220px;
+  }
+}
+@media (max-width: 700px) {
+  .kdh-contact-hero {
+    padding: 2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .kdh-contact-hero h2 {
+    font-size: 1.5rem;
+  }
+  .kdh-contact-hero p {
+    font-size: 1rem;
+  }
+  .kdh-contact-info-card, .kdh-contact-form-card {
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    min-width: unset;
+    width: 100%;
+  }
+  .kdh-contact-map-wrapper iframe {
+    min-height: 160px;
+  }
+} 

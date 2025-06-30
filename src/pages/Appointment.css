@@ -1,0 +1,41 @@
+.kdh-appointment-page {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(178,34,34,0.06);
+  text-align: center;
+}
+.kdh-appointment-form input,
+.kdh-appointment-form textarea,
+.kdh-appointment-form select {
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #FFD700;
+  border-radius: 6px;
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
+  background: #f9f9f9;
+  color: #333;
+}
+.kdh-appointment-form button {
+  background: #B22222;
+  color: #FFD700;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.kdh-appointment-form button:hover {
+  background: #FFD700;
+  color: #B22222;
+}
+@media (max-width: 700px) {
+  .kdh-appointment-page {
+    padding: 1rem 0.3rem;
+  }
+} 
